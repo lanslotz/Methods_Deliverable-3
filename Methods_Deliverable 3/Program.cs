@@ -20,10 +20,11 @@ namespace Methods_Deliverable_3
             // user try-catch to prevent unexpected user input
             try
             {
+                // this variable is used to capture what the user has entered.
                 string input = Console.ReadLine();
-
+                // this variable is used to record the message after executing the function PrintMessage.
                 string message = PrintMessage(input);
-
+                // display the entire message on console
                 Console.WriteLine(message);
             } // End of try
             catch
@@ -35,9 +36,12 @@ namespace Methods_Deliverable_3
             }
             
         }
+        //create new method to generate the hello message.
         private static string PrintMessage(string get_input)
         {
+            // this variable is used to create a new message based on the user input.
             string final_message = "Hello " + get_input + "!";
+            // return new message generated.
             return final_message;
 
         }
